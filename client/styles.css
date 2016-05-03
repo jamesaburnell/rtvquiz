@@ -1,0 +1,40 @@
+#fullContainer {
+	width: 100%
+	height: auto;
+}
+
+#centeredContainer {
+	width: 700px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.time {
+	height: 30px;
+	font-size: 10px;
+	color: lightgrey;
+	text-align: right;
+}
+
+.time span {
+	font-size: 15px;
+	font-weight: bold;
+	color: grey;
+	margin-right: 5px;
+}
+
+#timeContainer {
+	float: left;
+	position: relative;
+	width: 10%;
+}
+
+.event {
+	border: solid 1px grey;
+	border-left: solid 3px purple;
+}
+#eventContainer {
+	position: relative;
+	width: 90%;
+	float: left;
+}
