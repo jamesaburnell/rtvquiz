@@ -22,6 +22,7 @@ export default class Landing extends React.Component {
 			.then(response => {
 				let events = this.addPixelValues(response).sort((a,b) => a.pxstart - b.pxstart)
 				events = this.findConflicts(events)
+				console.log('events', events)
 				this.setState({
 					data: events
 				})
@@ -35,7 +36,7 @@ export default class Landing extends React.Component {
 			event.pxheight = (event.pxend - event.pxstart)
 			event.widthMod = 1
 			event.id = idx
-			event.overlappers = []
+			event.overlap = false
 			event.left = 0
 			return event
 		})
@@ -67,50 +68,38 @@ export default class Landing extends React.Component {
 	}
 
 	findConflicts(data){
-		let curr, next, k, count, diff
-		for(let i = 0; i < data.length; i++){
-			count = 1
+		let next,leftOffset, leftMod, temp, h, i, j, k, l, outputData, 
+			length = data.length
+		for(i = 0; i < length; i++){
 			k = i+1
-			while(k < data.length && data[i].pxend > data[k].pxstart){
-				data[i].widthMod = data[i].widthMod+1
-				data[k].widthMod = data[k].widthMod+1
-				count++
+			console.log(data[i])
+
+			if(data[i].left === 0) {
+				data[i].overlap = false
+				leftMod = 1
+			}
+
+			while(k < length && data[i].pxend > data[k].pxstart){
+					data[i].widthMod = data[i].widthMod+1
+					data[k].widthMod = data[k].widthMod+1
+					data[k].overlap = true
+				if(!data[i].overlap) leftMod++
 				k++
 			}
-			k--
-			while(k > i){
-				// data[k].left = (630 - (630/(k+1)));
-				k--
-				count--
+			for(h = i; h < k; h++){
+				data[h].width = (630/data[h].widthMod)
 			}
-
-
+			// Set the left positions of events
+			leftOffset = 630/(leftMod)
+			while(k > i){
+				if (data[k+1] && data[k+1].pxstart < data[i].pxend){
+					console.log(data[k].title, data[k].left)
+					data[k].left = (data[k-1].left + leftOffset)
+				}
+				k--;
+			}
 		}
-		for(let h = 0; h < data.length; h++){
-				data[h].width = (630/data[k].widthMod)
-		}
-
-		// let overlap, current, i, isOverlap, length, curr, widthOffset
-		// data.forEach((event, idx) => {
-		// 	for(i = idx+1; i < data.length && event.pxend > data[i].pxstart; i++) {
-		// 		event.overlappers.push(i)
-		// 		event.widthMod = event.widthMod+1
-		// 		data[i].widthMod = data[i].widthMod+1
-		// 	}
-		// 	event.width = (630/event.widthMod)
-		// 	length = event.overlappers.length
-		// 	widthOffset = 0
-
-		// 	// event.overlappers.forEach((idx) => {
-		// 	// 	widthOffset+=(630/length)
-		// 	// 	data[idx].left = data[idx].left+widthOffset
-		// 	// })
-		// })
-		// i = 0
-		// while(data[i]){
-
-		// }
-
+		console.log('end',data)
 		return data
 	}
 

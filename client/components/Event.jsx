@@ -5,6 +5,7 @@ export default class Event extends React.Component {
 		super(props)
 	}
 	render(){
+		console.log(this.props.left +'px')
 		return(
 			<div 
 			className="event" 
@@ -13,7 +14,7 @@ export default class Event extends React.Component {
 					height: this.props.pxheight, 
 					top: this.props.pxstart, 
 					width: this.props.width+'px', 
-					left: this.props.left}
+					left: this.props.left +'px'}
 				}>
 
 				<p>{this.props.title} ({this.props.id})</p>

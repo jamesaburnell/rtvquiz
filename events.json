@@ -1,8 +1,8 @@
 {
 	"events": [
 		{
-			"startTime": "16:30:00",
-			"endTime": "20:00:00",
+			"startTime": "13:30:00",
+			"endTime": "15:00:00",
 			"title": "Test event",
 			"descrption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 			"address": "5322 Otter Lane, Middleberge FL 32068",
@@ -25,9 +25,17 @@
 			"type": "performance"
 		},
 		{
-			"startTime": "19:00:00",
-			"endTime": "21:30:00",
+			"startTime": "18:00:00",
+			"endTime": "22:30:00",
 			"title": "Test event 7",
+			"descrption": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur",
+			"address": "6762 33 Ave N, St. Petersburg FL 33710",
+			"type": "panel"
+		},
+		{
+			"startTime": "19:30:00",
+			"endTime": "22:30:00",
+			"title": "Test event 9",
 			"descrption": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur",
 			"address": "6762 33 Ave N, St. Petersburg FL 33710",
 			"type": "panel"
@@ -57,8 +65,16 @@
 			"type": "panel"
 		},
 		{
-			"startTime": "14:40:00",
+			"startTime": "13:15:00",
 			"endTime": "15:30:00",
+			"title": "Test event 10",
+			"descrption": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+			"address": "6762 33 Ave N, St. Petersburg FL 33710",
+			"type": "panel"
+		},
+		{
+			"startTime": "15:40:00",
+			"endTime": "16:30:00",
 			"title": "Test event 8",
 			"descrption": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
 			"address": "6762 33 Ave N, St. Petersburg FL 33710",
