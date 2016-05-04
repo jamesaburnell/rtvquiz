@@ -5,8 +5,10 @@
 
 #centeredContainer {
 	width: 700px;
-	height: auto;
+	height: 770px;
 	margin: 0 auto;
+	background-color: #F7F7F7;
+	padding: 10px;
 }
 
 .time {
@@ -26,15 +28,21 @@
 #timeContainer {
 	float: left;
 	position: relative;
-	width: 10%;
+	width: 70px;
 }
 
 .event {
-	border: solid 1px grey;
-	border-left: solid 3px purple;
+	/*border: solid 1px grey;
+	border-left: solid 3px purple;*/
+	background-color: lightblue;
+	overflow: hidden;
+	position: absolute;
+	float: left;
+	box-shadow: 1px 0px 60px -22px black;
+
 }
 #eventContainer {
 	position: relative;
-	width: 90%;
+	width: 630px;
 	float: left;
 }

@@ -1,41 +1,65 @@
 {
 	"events": [
 		{
-			"startTime": "13:00:00",
-			"endTime": "14:45:00",
+			"startTime": "16:30:00",
+			"endTime": "20:00:00",
 			"title": "Test event",
 			"descrption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 			"address": "5322 Otter Lane, Middleberge FL 32068",
 			"type": "performance"
 		},
 		{
-			"startTime": "11:00:00",
-			"endTime": "13:00:20",
+			"startTime": "17:00:00",
+			"endTime": "20:30:00",
+			"title": "Test event 3",
+			"descrption": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur",
+			"address": "6762 33 Ave N, St. Petersburg FL 33710",
+			"type": "panel"
+		},
+			{
+			"startTime": "18:30:00",
+			"endTime": "21:00:00",
+			"title": "Test event 6",
+			"descrption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+			"address": "5322 Otter Lane, Middleberge FL 32068",
+			"type": "performance"
+		},
+		{
+			"startTime": "19:00:00",
+			"endTime": "21:30:00",
+			"title": "Test event 7",
+			"descrption": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur",
+			"address": "6762 33 Ave N, St. Petersburg FL 33710",
+			"type": "panel"
+		},
+		{
+			"startTime": "10:30:00",
+			"endTime": "11:30:00",
 			"title": "Test event 2",
 			"descrption": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
 			"address": "P.O. Box 1230 Georgetown, Cayman Islands B. W.",
 			"type": "speaker"
 		},
 		{
-			"startTime": "10:00:00",
-			"endTime": "12:00:00",
-			"title": "Test event 3",
-			"descrption": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur",
-			"address": "6762 33 Ave N, St. Petersburg FL 33710",
-			"type": "panel"
-		},
-		{
 			"startTime": "9:00:00",
-			"endTime": "9:30:00",
+			"endTime": "12:00:00",
 			"title": "Test event 4",
 			"descrption": "Duis aute irure dolor in reprehenderit",
 			"address": "P.O. Box 1230 Georgetown, Cayman Islands B. W.",
 			"type": "speaker"
 		},
 		{
-			"startTime": "13:30:11",
-			"endTime": "16:00:00",
+			"startTime": "11:00:00",
+			"endTime": "14:30:00",
 			"title": "Test event 5",
+			"descrption": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+			"address": "6762 33 Ave N, St. Petersburg FL 33710",
+			"type": "panel"
+		},
+		{
+			"startTime": "14:40:00",
+			"endTime": "15:30:00",
+			"title": "Test event 8",
 			"descrption": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
 			"address": "6762 33 Ave N, St. Petersburg FL 33710",
 			"type": "panel"
