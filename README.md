@@ -1,5 +1,5 @@
 # rtvquiz
 - npm install
-- webpack 
+- webpack (make sure installed globally)
 - npm start
-- open localhost 4000
+- open localhost on port 4000
